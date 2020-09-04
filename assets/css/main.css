@@ -9,6 +9,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
 a:hover {
   opacity: 0.7;
 }
@@ -36,15 +40,29 @@ nav a.active {
 
 .banner {
   font-family: 'Sorts Mill Goudy', serif;
+  /* background-image: url('/assets/images/front-of-church-drawing.png'); */
+  background-size: cover;
+  background-repeat: none;
+  background-color: rgb(224, 224, 224);
 }
 
 .banner .content {
   padding: 40px;
   padding-top: 220px;
-  /* background-image: url('/assets/images/front-of-church-drawing.png'); */
-  background-size: cover;
-  background-repeat: none;
-  background-color: rgb(224, 224, 224);
+}
+
+.banner.simple {
+  display: flex;
+  justify-content: center;
+  background-color: #4d6467;
+}
+
+.banner.simple .content {
+  padding-top: 40px;
+}
+
+.banner.simple h1 {
+  font-weight: 60px;
 }
 
 .banner h1 {
@@ -67,13 +85,56 @@ nav a.active {
 
 }
 
-.social
+.social {
   background-color: #333333;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
 
-.footer {
-  background-color: black;
+.social .fa {
+  background-color: transparent;
   color: white;
+  font-size: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+
+.siteMap {
+  background-color: #212121;
+  color: white;
+  padding: 25px;
+}
+
+.mainContentContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mainContent {
+  width: 800px;
+  padding: 50px 0;
+}
+
+.mainContent h2 {
+  font-weight: normal;
+  font-size: 25px;
+  margin-bottom: 32px;
+}
+
+.mainContent p {
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.siteMap .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
 }
 
 .footer a {
@@ -90,4 +151,30 @@ nav a.active {
   background-color: black;
   border-radius: 50%;
   font-size: 20px;
+}
+
+.serviceTimes {
+  background-color: #4d6467;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.serviceTimes h4 {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.serviceTimes p {
+  margin: 10px 0;
+}
+
+.serviceTime {
+    margin: 10px 30px;
+
+}
+
+.highlights {
+  background-color: #212121;
 }

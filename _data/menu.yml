@@ -4,7 +4,10 @@ pages:
       url: /about/
 
     - title: Who's Who
-      url: /whoiswho
+      url: /whoiswho/
+
+    - title: Policies
+      url: /policies/
 
     - title: Contact
-    - url: /contact/
+      url: /contact/
