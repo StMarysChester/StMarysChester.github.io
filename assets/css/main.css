@@ -1,0 +1,93 @@
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+nav {
+  padding: 30px 50px;
+  display: flex;
+  font-size: 25px;
+}
+
+nav .siteLinks {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+nav .siteLinks a {
+  margin-left: 30px;
+}
+
+nav a.active {
+  text-decoration: underline;
+}
+
+.banner {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+.banner .content {
+  padding: 40px;
+  padding-top: 220px;
+  /* background-image: url('/assets/images/front-of-church-drawing.png'); */
+  background-size: cover;
+  background-repeat: none;
+  background-color: rgb(224, 224, 224);
+}
+
+.banner h1 {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 5px;
+  /* background-color: #00000022; */
+  color: white;
+}
+
+.banner .fa {
+  background-color: rgb(224, 224, 224);
+  background-color: white;
+  margin-right: 10px;
+}
+
+.content {
+
+}
+
+.social
+  background-color: #333333;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+.footer a {
+  color: #8ba6a6;
+}
+
+.fa {
+  padding: 8px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border-radius: 50%;
+  font-size: 20px;
+}

@@ -1,0 +1,11 @@
+<nav>
+  <a class="homeLink" href="/">Home</a>
+
+  <div class="siteLinks">
+    {% for item in site.data.menu.pages %}
+      <a
+        class="{% if item.url == page.url %}active{% endif %}"
+        href="{{ item.url }}">{{ item.title }}</a>
+   {% endfor %}
+  </div>
+</nav>

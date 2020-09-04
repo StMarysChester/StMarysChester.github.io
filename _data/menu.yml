@@ -1,0 +1,10 @@
+pages:
+
+    - title: About
+      url: /about/
+
+    - title: Who's Who
+      url: /whoiswho
+
+    - title: Contact
+    - url: /contact/
