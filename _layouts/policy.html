@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<div class="policyLinksWrapper">
+  <div class="policyLinks">
+    {% for item in site.data.policies.pages %}
+      <a
+        class="{% if item.url == page.url %}active{% endif %}"
+        href="{{ item.url }}">{{ item.title }}</a>
+   {% endfor %}
+  </div>
+</div>
+
+<div class="mainContentContainer">
+  <div class="mainContent">
+    {{content}}
+  </div>
+</div>
