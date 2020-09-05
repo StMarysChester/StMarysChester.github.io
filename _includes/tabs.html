@@ -1,0 +1,9 @@
+<div class="policyLinksWrapper">
+  <div class="policyLinks">
+    {% for item in include.tabPages %}
+      <a
+        class="{% if item.url == page.url %}active{% endif %}"
+        href="{{ item.url }}">{{ item.title }}</a>
+   {% endfor %}
+  </div>
+</div>

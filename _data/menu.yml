@@ -1,13 +1,13 @@
 pages:
 
-    - title: About
-      url: /about/
-
     - title: Who's Who
       url: /whoiswho/
 
+    - title: Services
+      url: /weddings/
+
     - title: Policies
-      url: /policies/
+      url: /safeguarding/
 
     - title: Contact
       url: /contact/
