@@ -1,0 +1,25 @@
+<div class="person">
+  <div class="avatar">
+    {% if include.avatar %}
+      <img src="{{include.avatar}}" />
+    {% endif %}
+  </div>
+  <div class="details">
+    <h2>{{ include.name }}</h2>
+    {% if include.blurb %}
+      <p class="blurb">{{ include.blurb }}</p>
+    {% endif %}
+    {% if include.telephoneNumber %}
+      <p class="contact">
+        <span class="type">t:</span>
+        <a href="tel:{{ include.telephoneNumber}}">{{ include.telephoneNumber }}</a>
+      </p>
+    {% endif %}
+    {% if include.email %}
+      <p class="contact">
+        <span class="type">e:</span>
+        <a href="mailto:{{include.email}}">{{ include.email }}</a>
+      </p>
+    {% endif %}
+  </div>
+</div>
