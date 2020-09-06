@@ -45,7 +45,7 @@ nav a.active {
 
 .banner {
   font-family: 'Sorts Mill Goudy', serif;
-  /* background-image: url('/assets/images/front-of-church-drawing.png'); */
+  background-image: url('/assets/images/light-cropped.jpg');
   background-size: cover;
   background-repeat: none;
   background-color: rgb(224, 224, 224);
@@ -59,6 +59,7 @@ nav a.active {
 .banner.simple {
   display: flex;
   justify-content: center;
+  background-image: none;
   background-color: #4d6467;
 }
 
@@ -74,10 +75,11 @@ nav a.active {
   padding: 5px;
   /* background-color: #00000022; */
   color: white;
+  max-width: 500px;
 }
 
 .banner .fa {
-  color: rgb(224, 224, 224);
+  color: #4d6467;
   background-color: white;
   margin-right: 10px;
 }
@@ -219,12 +221,13 @@ nav a.active {
   color: white;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .serviceTimes h4 {
   margin: 10px 0;
-  font-size: 20px;
-  font-weight: normal;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .serviceTimes p {
@@ -232,10 +235,58 @@ nav a.active {
 }
 
 .serviceTime {
-    margin: 10px 30px;
-
+    margin: 10px 50px;
 }
 
 .highlights {
   background-color: #212121;
+}
+
+.contactContent {
+  display: flex;
+}
+
+.contactContent .contactInfo {
+  width: 370px;
+  padding-right: 30px;
+}
+
+.contactContent .socialIcons {
+  margin: 30px 0;
+}
+
+.contactSection h2 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 15px
+}
+
+.contactSection {
+  margin-bottom: 40px;
+}
+
+.contactSection .address {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.contactSection .addressLine {
+  display: block;
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.contactContent a.fa {
+  font-size: 30px;
+  width: 30px;
+  padding: 0;
+  color: black;
+  margin-right: 30px;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.contactContent .mapWrapper {
+  filter: grayscale(100%)
 }
