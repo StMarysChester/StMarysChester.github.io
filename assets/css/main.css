@@ -101,12 +101,6 @@ nav a.active {
   margin-left: 20px;
 }
 
-.siteMap {
-  background-color: #212121;
-  color: white;
-  padding: 25px;
-}
-
 .mainContentContainer {
   display: flex;
   align-items: center;
@@ -131,13 +125,6 @@ nav a.active {
 
 .mainContent a {
   color: #8ba6a6
-}
-
-.siteMap .copyright {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
 }
 
 .footer a {
@@ -289,4 +276,46 @@ nav a.active {
 
 .contactContent .mapWrapper {
   filter: grayscale(100%)
+}
+
+.siteMap {
+  background-color: #212121;
+  color: white;
+  padding: 30px;
+}
+
+.siteMap .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-top: 30px;
+}
+
+.siteMap h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.siteMap ul {
+  padding-left: 0;
+}
+
+.siteMap li {
+  list-style: none;
+}
+
+.siteMap .siteLinks {
+  display: flex;
+  justify-content: center;
+}
+
+.siteMap .sectionLinks {
+  min-width: 150px;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.siteMap a {
+  color: #8ba6a6;
 }

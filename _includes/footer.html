@@ -4,6 +4,18 @@
   <a href="https://www.youtube.com/channel/UCHvzYJ1wjdH8XXy_gtovCBQ" target="_blank" class="fa fa-youtube"></a>
 </div>
 <div class="siteMap">
+  <div class="siteLinks">
+    {% for section in site.data.sitemap.sections %}
+      <div class="sectionLinks">
+        <h3>{{ section.title }}</h3>
+        <ul>
+          {% for item in section.pages %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% endfor %}
+  </div>
   <p class="copyright">
     © 2020 St Mary's Without the  Walls, Chester UK
   </p>
