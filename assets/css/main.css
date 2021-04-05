@@ -26,13 +26,13 @@ nav {
   padding: 30px 50px;
   display: flex;
   font-size: 20px;
+  font-family: 'Sorts Mill Goudy', serif;
 }
 
 nav .siteLinks {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end;
-  font-family: 'Sorts Mill Goudy', serif;
 }
 
 nav .siteLinks a {
@@ -53,7 +53,7 @@ nav a.active {
 
 .banner .content {
   padding: 40px;
-  padding-top: 220px;
+  padding-top: 160px;
 }
 
 .banner.simple {
@@ -109,7 +109,7 @@ nav a.active {
 
 .mainContent {
   max-width: 800px;
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 
 .mainContent h2 {
@@ -141,6 +141,7 @@ nav a.active {
   justify-content: center;
   border-bottom: 2px solid #4d6467;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .tabs a {
@@ -209,6 +210,7 @@ nav a.active {
   display: flex;
   justify-content: center;
   text-align: center;
+  min-height: 60px;
 }
 
 .serviceTimes h4 {
@@ -318,4 +320,79 @@ nav a.active {
 
 .siteMap a {
   color: #8ba6a6;
+}
+
+/* Treat as 'mobile' */
+@media (hover:none), (hover:on-demand) {
+  .mainContent {
+    padding: 20px;
+  }
+
+  .banner .content {
+    padding-top: 40px;
+  }
+
+  .banner h1 {
+    font-size: 30px;
+  }
+
+  nav {
+    padding: 30px;
+  }
+
+  nav .siteLinks {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: white;
+  }
+
+  nav .siteLinks a {
+    display: block;
+    padding-bottom: 30px;
+  }
+
+  nav #burgerMenu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav #burgerMenu .topBun {
+    background-color: black;
+    width: 35px;
+    height: 2px;
+    transition: 250ms;
+  }
+
+  nav #burgerMenu .burger {
+    background-color: black;
+    width: 35px;
+    height: 2px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    transition: 250ms;
+  }
+
+  nav #burgerMenu .bottomBun {
+    background-color: black;
+    width: 35px;
+    height: 2px;
+    transition: 250ms;
+  }
+
+  nav #burgerMenu.active .topBun {
+      transform: translatey(10px) rotate(-135deg)
+  }
+
+  nav #burgerMenu.active .burger {
+    width: 0px;
+  }
+
+  nav #burgerMenu.active .bottomBun {
+    transform: translatey(-10px) rotate(135deg)
+  }
 }

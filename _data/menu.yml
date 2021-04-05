@@ -1,13 +1,13 @@
 pages:
 
-    - title: Who's Who
-      url: /whoiswho/
+    - title: Who we are
+      url: /contact/
 
-    - title: Services
+    - title: What we do
       url: /weddings/
 
-    - title: Policies
-      url: /safeguarding/
+    - title: Services
+      url: /services/
 
-    - title: Contact
-      url: /contact/
+    - title: St Mary's Centre
+      url: /centre/

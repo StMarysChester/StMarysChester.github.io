@@ -1,11 +1,19 @@
 <nav>
-  <a class="homeLink" href="/">LOGO</a>
+  <a class="homeLink" href="/">Home</a>
 
-  <div class="siteLinks">
+  <div id="menu" class="siteLinks">
     {% for item in site.data.menu.pages %}
       <a
         class="{% if item.url == page.url %}active{% endif %}"
         href="{{ item.url }}">{{ item.title }}</a>
    {% endfor %}
   </div>
+  <div id="burgerMenu">
+    <div>
+      <div class="topBun"></div>
+      <div class="burger"></div>
+      <div class="bottomBun"></div>
+    </div>
+  </div>
+  <script src="/assets/js/nav.js"></script>
 </nav>
