@@ -395,4 +395,30 @@ nav a.active {
   nav #burgerMenu.active .bottomBun {
     transform: translatey(-10px) rotate(135deg)
   }
+
+  .contactContent {
+    display: block;
+  }
+
+  .contactContent .contactInfo {
+    width: unset;
+    padding-right: 0;
+  }
+
+  .contactContent .map {
+    max-width: 100%;
+  }
+
+  .person {
+    display: block;
+  }
+
+  .person:last-child {
+    margin-bottom: 30px;
+  }
+
+  .person .details {
+    margin-left: 0px;
+    margin-top: 20px;
+  }
 }
